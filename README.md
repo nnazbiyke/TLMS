@@ -5,7 +5,7 @@ This project automates web testing for [TalentLMS](https://www.talentlms.com/) u
 ## Prerequisites
 
 - Java 17
-- Maven 4.0
+- Maven 3.8
 ## Technologies
 
 - **Java 17**: Programming language.
