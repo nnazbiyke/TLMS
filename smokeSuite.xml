@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+<!--    <listeners>-->
+<!--        <listener class-name="listener.ScreenshotListener"></listener>-->
+<!--    </listeners>-->
+    <test verbose="2" preserve-order="true" name="tests">
+        <classes>
+            <class name="uiTest.accountAndSettingsTests.SubscriptionTest">
+                <methods>
+                    <include name="clickStarterPlanButtonTest"/>
+                    <include name="clickBasicPlanButtonTest"/>
+                    <include name="clickPlusPlanButtonTest"/>
+                    <include name="clickPremiumPlanButtonTest"/>
+                </methods>
+            </class>
+            <class name="uiTest.coursesTest.CoursesTest">
+                <methods>
+                    <include name="addTest"/>
+                    <include name="cloneTest"/>
+                    <include name="editTest"/>
+                    <include name="removeTest"/>
+                </methods>
+            </class>
+            <class name="uiTest.reportsTest.UserReportsPageTest">
+                <methods>
+                    <include name="verify_user_table_sorting_after_clicking_user_column_sort_button"/>
+                    <include name="verify_user_type_table_sorting_after_clicking_user_column_sort_button"/>
+                    <include name="Testing_of_table_search_functionality"/>
+                    <include name="user_profile_and_progress_on_click"/>
+                </methods>
+            </class>
+            <class name="uiTest.usersTest.UsersTest">
+                <methods>
+                    <include name="addUserTest"/>
+                    <include name="requiredFieldsMessagesTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
